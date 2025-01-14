@@ -124,6 +124,29 @@ a {
 
 .lower_body {
     height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action_box {
+    width: 670px;
+    border-radius: 8px;
+    display: flex;
+    gap: 25px;
+    background-color: lightblue;
+    color: white;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.action_button {
+    background-color: lightblue;
+    color: white;
+    width: 75px;
+    border-radius: 8px;
+    border-color: white;
+    border-style: solid;
 }
 
 .footer {
