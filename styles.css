@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header{
     background: #1F2937;
     padding: 20px;
@@ -7,7 +13,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    padding: 20px 100px;
 }
 
 .website_name {
@@ -15,15 +22,12 @@
     font-size: 24px;
     color: #F9FAF8;
     font-weight: 700;
-    margin-left: 200px;
-    margin-right: 200px;
 }
 
 ul {
     display: flex;
     gap: 15px;
     list-style-type: none;
-    margin-right: 330px;
 }
 
 a {
@@ -35,24 +39,26 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    margin-right: auto;
 }
 
 .header_body_left {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 200px;
-    margin-right: 200px;
     gap: 10px;
 }
 
 .header_body_right {
     display: flex;
-    margin-right: 330px;
 }
 
 .header_picture {
     max-height: 250px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .slogan {
@@ -82,12 +88,14 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    height: 300px;
+    height: auto;
 }
 
 .pictures {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
+    justify-content: center;
 }
 
 .language_picture {
@@ -104,16 +112,18 @@ a {
 
 .mid_body {
     padding: 20px;
-    height: 200px;
+    height: auto;
     background-color: gray;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .quote {
     font-size: 22px;
     flex-wrap: wrap;
     max-width: 600px;
+    text-align: center;
 }
 
 .quote_author {
@@ -123,14 +133,16 @@ a {
 }
 
 .lower_body {
-    height: 250px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .action_box {
-    width: 670px;
+    width: 100%;
+    max-width: 670px;
     border-radius: 8px;
     display: flex;
     gap: 25px;
@@ -138,6 +150,7 @@ a {
     color: white;
     padding: 40px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .action_button {
